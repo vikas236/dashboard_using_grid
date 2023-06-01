@@ -76,11 +76,7 @@ body {
 }
 
 
-/* Styling main content and nav bar*/
-.main {
-    display: grid;
-}
-
+/* Styling nav bar*/
 .navbar {
     background: white;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
@@ -127,7 +123,7 @@ body {
     border-radius: 25px;
     border: none;
     background: #E2E8F0;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 .navbar input:focus {
@@ -178,11 +174,84 @@ body {
 .navbar button {
     width: 125px;
     height: 40px;
-    margin: 0 25px;
+    margin: 0 10px;
     background: #1992D4;
     border: none;
     border-radius: 25px;
     color: white;
     font-weight: 600;
-    font-size: 14px;
+    cursor: pointer;
+    animation: .6s;
+}
+
+.navbar button:hover {
+    transform: scale(1.05);
+    color: #1992D4;
+    background: white;
+    border: 2px solid #1992D4;
+}
+
+
+/* Styling main content */
+.main {
+    margin-top: 140px;
+    display: grid;
+    height: calc(100vh - 140px);
+    background: #E2E8F0;
+}
+
+.hero {
+    grid-area: 1/1/4/5;
+}
+
+.primary {
+    grid-area: 1/5/2/6;
+}
+
+.secondary {
+    grid-area: 2/5/3/6;
+}
+
+.hero h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.hero .container {
+    height: calc(100vh - 240px);
+    padding: 0 50px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.hero .container .box {
+    width: 350px;
+    height: 300px;
+    background: linear-gradient(to right, #F0B429 0%, #F0B429 2%, white 2%);
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.hero .container .box h3 {
+    font-size: 18px;
+}
+
+.hero .container .box p {
+    font-size: 16px;
+    color:rgba(0, 0, 0, .7);
+    line-height: 1.2em;
+}
+
+.hero .box .icons {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+}
+
+.hero .box .icons svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
 }
