@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="hero">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+            </svg>
+            <span class="title">Dashboard</span>
+        </div>
+        <div class="topics">
+            <div class="topic">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                </svg>
+                <span class="section"><a>Home</a></span>
+            </div>
+            <div class="topic">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M4 4C2.89 4 2 4.89 2 6V18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4H4M4 6H20V10H4V6M4 12H8V14H4V12M10 12H20V14H10V12M4 16H14V18H4V16M16 16H20V18H16V16Z" />
+                </svg> <span class="section"><a>Profile</a></span>
+            </div>
+            <div class="topic">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z" />
+                </svg>
+                <span class="section"><a>Messages</a></span>
+            </div>
+            <div class="topic">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M17 13H11V7H12.5V11.5H17V13Z" />
+                </svg>
+                <span class="section"><a>History</a></span>
+            </div>
+            <div class="topic">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M16.53,11.06L15.47,10L10.59,14.88L8.47,12.76L7.41,13.82L10.59,17L16.53,11.06Z" />
+                </svg>
+                <span class="section"><a>Tasks</a></span>
+            </div>
+            <div class="topic">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" />
+                </svg>
+                <span class="section"><a>Communities</a></span>
+            </div>
+        </div>
+        <div class="others">
+            <div class="other">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                </svg>
+                <span class="section"><a>Settings</a></span>
+            </div>
+            <div class="other">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M11,18H13V16H11V18M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" />
+                </svg>
+                <span class="section"><a>Support</a></span>
+            </div>
+            <div class="other">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" /></svg>
+                <span class="section"><a>Privacy</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="navbar">
+            <div class="col">
+                <img src="" alt="search">
+                <input type="text" name="search" id="search">
+                <img src="" alt="notification">
+                <img src="" alt="logo">
+                <span class="username">Morgan Oakley</span>
+            </div>
+            <div class="col">
+                <div class="left">
+                    <img src="" alt="logo">
+                    <div class="message">
+                        <span class="greet">Hi there,</span>
+                        <span class="name">Morgan Oakley (@morgan)</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <h2>Your Projects</h2>
+            <div class="container">
+                <div class="box">
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit possimus beatae harum. Nisi
+                        provident vel dolore molestias, nemo quis nihil mollitia, aut nesciunt, dolorum neque!
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Less Cool Project</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id sunt maxime necessitatibus explicabo
+                        atque corporis optio, perferendis dicta distinctio voluptatibus, nulla dolorum, odio ullam
+                        veritatis ipsam fugiat vero natus at?Quidem repellendus unde ut ea, harum quibusdam provident
+                        nesciunt sunt aliquam libero similiqueadipisci nostrum natus cumque beatae asperiores
+                        doloremque?
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Impossible App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eligendi voluptate non odio,
+                        molestiae voluptatem, ex vel corrupti vero laboriosam dolor </p>
+                </div>
+                <div class="box">
+                    <h3>Easy Peasy App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat repellat quo cum
+                        quidem quibusdam modi voluptatibus natus, unde delectus in atque perspiciatis recusandae dolores
+                        debitis velit ratione, nisi voluptate!</p>
+                </div>
+                <div class="box">
+                    <h3>Ad Blocker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsa enim consequatur deserunt
+                        provident quis sunt debitis mollitia eaque. Sequi perferendis corporis dolorum quisquam
+                        doloribus esse hic, ducimus inventore nulla?doloribus esse hic, ducimus inventore nulla?
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Money Maker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officia eos itaque fugiat
+                        accusamus error, quis impedit eum ea recusandae qui atque soluta nulla sunt in alias dicta
+                        beatae esse.eum ea recusandae qui atque soluta nulla sunt in alias dicta beatae esse.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="primary">
+            <h2>Announcements</h2>
+            <div class="list">
+                <div class="col">
+                    <h4>Site Maintainance</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iusto culpa, necessitatibus
+                        veritatis dolor consequuntur deserunt voluptas nam fugit a voluptatibus beatae mollitia, ea
+                        incidunt eaque cum doloremque sequi? Soluta...</p>
+
+                </div>
+                <div class="col">
+                    <h4>Community Share Day</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iusto culpa, necessitatibus
+                        veritatis dolor consequuntur deserunt voluptas nam fugit a voluptatibus beatae mollitia, ea
+                        incidunt eaque cum? Soluta...</p>
+                </div>
+                <div class="col">
+                    <h4>Updated Privacy Policy</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem iusto culpa, necessitatibus
+                        veritatis dolor consequuntur deserunt voluptas nam fugit a mollitia, doloremque sequi? Soluta...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="secondary">
+            <h2>Trending</h2>
+            <div class="list">
+                <div class="col">
+                    <img src="" alt="user_logo">
+                    <div class="details">
+                        <span class="username">@tegan</span>
+                        <span class="topic">World Peace Builder</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="" alt="user_logo">
+                    <div class="details">
+                        <span class="username">@morgan</span>
+                        <span class="topic">Super cool Project</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="" alt="user_logo">
+                    <div class="details">
+                        <span class="username">@kendall</span>
+                        <span class="topic">Life Changing Project</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="" alt="user_logo">
+                    <div class="details">
+                        <span class="username">@alex</span>
+                        <span class="topic">No Traffic Maker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
