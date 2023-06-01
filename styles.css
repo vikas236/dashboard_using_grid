@@ -82,9 +82,9 @@ body {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
     position: fixed;
     z-index: 2;
-    width: 85.8vw;
+    width: 86vw;
     height: 15%;
-    margin-left: 14.2vw;
+    margin-left: 14vw;
 }
 
 .navbar .col {
@@ -215,6 +215,7 @@ body {
 .hero h2 {
     margin-top: 50px;
     margin-left: 50px;
+    margin-bottom: 10px;
 }
 
 .hero .container {
@@ -238,7 +239,7 @@ body {
     font-size: 18px;
 }
 
-.hero .container .box p {
+p {
     font-size: 16px;
     color:rgba(0, 0, 0, .7);
     line-height: 1.2em;
@@ -254,4 +255,88 @@ body {
     width: 30px;
     height: 30px;
     margin-left: 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hero .box .icons svg:hover path {
+    fill: rgba(25, 146, 212, .5);
+}
+
+.list {
+    background: white;
+    width: 350px;
+    padding: 10px 40px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.primary h2 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.primary .col h4 {
+    margin-bottom: -12px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.primary .col h4:hover {
+    color: rgba(240, 180, 41, .7);
+}
+
+.primary .col p {
+    font-size: 14px;
+}
+
+.secondary h2 {
+    margin-top: 37px;
+    margin-bottom: 10px;
+}
+
+.secondary .list {
+    height: 250px;
+}
+
+.secondary img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.secondary .col {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.secondary .col .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary .col .details .username {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.secondary .col .details .username:hover {
+    color: rgba(240, 180, 41, .7);
+}
+
+.secondary .col .details .topic {
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 3px;
+}
+
+.box, .list {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+    transition: .6s;
+}
+
+.box:hover{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+    transform: scale(1.05);
 }
